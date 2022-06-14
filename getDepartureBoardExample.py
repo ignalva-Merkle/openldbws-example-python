@@ -20,8 +20,8 @@ from zeep import Client
 from zeep import xsd
 from zeep.plugins import HistoryPlugin
 
-LDB_TOKEN = ''
-WSDL = 'http://lite.realtime.nationalrail.co.uk/OpenLDBWS/wsdl.aspx?ver=2017-10-01'
+LDB_TOKEN = '2565c363-1511-4436-9a83-b6eb52ecda6a'
+WSDL = 'http://localhost:8088/mockLDBServiceSoap12?WSDL' #'http://lite.realtime.nationalrail.co.uk/OpenLDBWS/wsdl.aspx?ver=2017-10-01'
 
 if LDB_TOKEN == '':
     raise Exception("Please configure your OpenLDBWS token in getDepartureBoardExample!")

@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:mockService id="33bc1a11-4a59-41f1-95a2-aef87479ea36" port="8088" path="/mockLDBServiceSoap12" host="localhost" name="LDBServiceSoap12 MockService" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="GetDepartureBoard" id="bc9cdd8a-383d-4524-889c-5c8fb4a3194c" interface="LDBServiceSoap12" operation="GetDepartureBoard"><con:settings/><con:defaultResponse>ResponseCRS</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchPath/><con:response name="ResponseCRS" id="c18f9de3-15db-47b6-9f4a-d76813dbda45" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:script>def holder = new com.eviware.soapui.support.XmlHolder( mockRequest.requestContent )
+requestContext.mockCrs = holder.getNodeValue("//ldb:crs") 
+if (requestContext.mockCrs == null){
+	requestContext.mockCrs = holder.getNodeValue("//crs")
+}
+</con:script><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetDepartureBoardResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
+         <GetStationBoardResult xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types" xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types" xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types" xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types">
+            <lt4:generatedAt>2022-06-13T16:30:33.2370036+01:00</lt4:generatedAt>
+            <lt4:locationName>Mock Location</lt4:locationName>
+            <lt4:crs>${mockCrs}</lt4:crs>
+            <lt4:nrccMessages>
+               <lt:message>The lifts are out of order between Platform 6/7 and The Subway at Cardiff Central station.</lt:message>
+            </lt4:nrccMessages>
+            <lt4:platformAvailable>true</lt4:platformAvailable>
+            <lt7:trainServices>
+               <lt7:service>
+                  <lt4:std>16:27</lt4:std>
+                  <lt4:etd>Cancelled</lt4:etd>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:isCancelled>true</lt4:isCancelled>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:cancelReason>This train has been cancelled because of a fault on this train</lt4:cancelReason>
+                  <lt4:delayReason>This train has been delayed by a fault on this train</lt4:delayReason>
+                  <lt4:serviceID>liy2Q5UV6Z8Eb8sTW7ghkg==</lt4:serviceID>
+                  <lt5:rsid>GW841200</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Portsmouth Harbour</lt4:locationName>
+                        <lt4:crs>PMH</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+                  <lt5:currentOrigins>
+                     <lt4:location>
+                        <lt4:locationName>Bristol Temple Meads</lt4:locationName>
+                        <lt4:crs>BRI</lt4:crs>
+                     </lt4:location>
+                  </lt5:currentOrigins>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:31</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>6</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>Qn7fB6XKYadld9s5M/THQA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Bargoed</lt4:locationName>
+                        <lt4:crs>BGD</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:32</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>8</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>H+Puv+WkUvDuYrx+2LaqQw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Rhymney</lt4:locationName>
+                        <lt4:crs>RHY</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:33</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>0</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>PCTayStGHd8PvgKtraC8cg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Ebbw Vale Town</lt4:locationName>
+                        <lt4:crs>EBB</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:35</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>7</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>Yt1WJ+G//uZ3G2dOegJqhA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Treherbert</lt4:locationName>
+                        <lt4:crs>TRB</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:36</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>8</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>GmzhXMi8/xCJ3J5OGIvYcQ==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Coryton</lt4:locationName>
+                        <lt4:crs>COY</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Radyr</lt4:locationName>
+                        <lt4:crs>RDR</lt4:crs>
+                        <lt4:via>via Ninian Park</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:39</lt4:std>
+                  <lt4:etd>16:45</lt4:etd>
+                  <lt4:platform>3</lt4:platform>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>eK1ywrJYdg8QaIF2hUiiqA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Paddington</lt4:locationName>
+                        <lt4:crs>PAD</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Swansea</lt4:locationName>
+                        <lt4:crs>SWA</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:41</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>6</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>DAFq1xxhIbV+FZx++rtyJg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Bridgend</lt4:locationName>
+                        <lt4:crs>BGN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Aberdare</lt4:locationName>
+                        <lt4:crs>ABA</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:41</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>8</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>32prSoriOQWY8rPMRzHUDA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Merthyr Tydfil</lt4:locationName>
+                        <lt4:crs>MER</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Bridgend</lt4:locationName>
+                        <lt4:crs>BGN</lt4:crs>
+                        <lt4:via>via Rhoose Cardiff Int Airport</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:45</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>1</lt4:platform>
+                  <lt4:operator>CrossCountry</lt4:operator>
+                  <lt4:operatorCode>XC</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>x4KHihLV8ODqil6yc0o+dg==</lt4:serviceID>
+                  <lt5:rsid>XC525000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Nottingham</lt4:locationName>
+                        <lt4:crs>NOT</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:46</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>8</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>af4JuatnS5+kAiymsG6cYg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Bargoed</lt4:locationName>
+                        <lt4:crs>BGD</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:50</lt4:std>
+                  <lt4:etd>17:02</lt4:etd>
+                  <lt4:platform>2</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:delayReason>This train has been delayed by a fault on this train</lt4:delayReason>
+                  <lt4:serviceID>+weGFFxG7VYZR+9ZU7Z+Qg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Carmarthen</lt4:locationName>
+                        <lt4:crs>CMN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                        <lt4:crs>MAN</lt4:crs>
+                        <lt4:via>via Shrewsbury</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:51</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>6</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>FPCCWo+VseglKZ44mjCSAg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Radyr</lt4:locationName>
+                        <lt4:crs>RDR</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Coryton</lt4:locationName>
+                        <lt4:crs>COY</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:54</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>1</lt4:platform>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>nXNeGBYbSi3wzG43ihh78A==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>London Paddington</lt4:locationName>
+                        <lt4:crs>PAD</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:55</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>8</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>lo5Gg9s0DA1WfljeAQgk2g==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Aberdare</lt4:locationName>
+                        <lt4:crs>ABA</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:56</lt4:std>
+                  <lt4:etd>17:00</lt4:etd>
+                  <lt4:platform>6</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>MkGyvLOiapQaaxrzJQQHpw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Merthyr Tydfil</lt4:locationName>
+                        <lt4:crs>MER</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:00</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>2</lt4:platform>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>nmvD+ZDeyk6XujRAW6kthg==</lt4:serviceID>
+                  <lt5:rsid>GW861900</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Taunton</lt4:locationName>
+                        <lt4:crs>TAU</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:01</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>6</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>zK4v+64TUKjldoQGO8jwcA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Rhymney</lt4:locationName>
+                        <lt4:crs>RHY</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:02</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>8</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>fKYeZNDsyE/pRqaRaBq+gw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Bargoed</lt4:locationName>
+                        <lt4:crs>BGD</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:04</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>3A</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:cancelReason>This train has been cancelled because of a fault on this train</lt4:cancelReason>
+                  <lt4:delayReason>This train has been delayed by a fault on this train</lt4:delayReason>
+                  <lt4:serviceID>QWiL5gHJ1bVZyR/yikDARg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Crewe</lt4:locationName>
+                        <lt4:crs>CRE</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Tenby</lt4:locationName>
+                        <lt4:crs>TEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:05</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>7</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>ezHxaDNOwcG6nkphpIPx+g==</lt4:serviceID>
+                  <lt5:rsid>AW755602</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Treherbert</lt4:locationName>
+                        <lt4:crs>TRB</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:06</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>8</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>jwVVvbRGLpF08lD30l0jZw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Coryton</lt4:locationName>
+                        <lt4:crs>COY</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Radyr</lt4:locationName>
+                        <lt4:crs>RDR</lt4:crs>
+                        <lt4:via>via Ninian Park</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:08</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>2</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>3jfkfcE3u9JlCOROnwN9lA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Maesteg</lt4:locationName>
+                        <lt4:crs>MST</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Cheltenham Spa</lt4:locationName>
+                        <lt4:crs>CNM</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:10</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>8</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>Dkv8lyNw0Halg6+FfvaPog==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Merthyr Tydfil</lt4:locationName>
+                        <lt4:crs>MER</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:11</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>6</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>HKmUp4cxdjcNLbfb59jZlA==</lt4:serviceID>
+                  <lt5:rsid>AW909500</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Aberdare</lt4:locationName>
+                        <lt4:crs>ABA</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:16</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>1</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>91eDo7N4T3o2JKeZhLGTFw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Holyhead</lt4:locationName>
+                        <lt4:crs>HHD</lt4:crs>
+                        <lt4:via>via Shrewsbury</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:16</lt4:std>
+                  <lt4:etd>17:18</lt4:etd>
+                  <lt4:platform>8</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>O2426nqunycm5Jk3pkoUOQ==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Bargoed</lt4:locationName>
+                        <lt4:crs>BGD</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:20</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>2</lt4:platform>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>v5ECiifZHxQdubxF90Szmg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Swansea</lt4:locationName>
+                        <lt4:crs>SWA</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>London Paddington</lt4:locationName>
+                        <lt4:crs>PAD</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:21</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>6</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>E5+CDST5srzxwz1LfZviaw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Radyr</lt4:locationName>
+                        <lt4:crs>RDR</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Coryton</lt4:locationName>
+                        <lt4:crs>COY</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:22</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>4A</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>olUrn2+vOGFLjAl/2pF4zA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Maesteg</lt4:locationName>
+                        <lt4:crs>MST</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:25</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>8</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>A3Wm9jq90AVTY9kEUOT8LA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Aberdare</lt4:locationName>
+                        <lt4:crs>ABA</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:26</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>6</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>rnCMtfY79yfmUgk9/NM4MA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Merthyr Tydfil</lt4:locationName>
+                        <lt4:crs>MER</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:27</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>1</lt4:platform>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>QPTH76uBsMAWSx8fWhZbPg==</lt4:serviceID>
+                  <lt5:rsid>GW841300</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Portsmouth Harbour</lt4:locationName>
+                        <lt4:crs>PMH</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:31</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>6</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>/Pa7/JsHpZ3Ibt/mhD31og==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Rhymney</lt4:locationName>
+                        <lt4:crs>RHY</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:32</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>W5se37AwMPCWq2IAlffQlA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Rhymney</lt4:locationName>
+                        <lt4:crs>RHY</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:34</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>Z6OOuE16FfVrCzMn+7C0NA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Ebbw Vale Town</lt4:locationName>
+                        <lt4:crs>EBB</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:35</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>7</lt4:platform>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>0YXi2ZtdjoUWl3OY2y8xmw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Treherbert</lt4:locationName>
+                        <lt4:crs>TRB</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:36</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>fkr/1pd0KHsuB0eGyUtiEg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Coryton</lt4:locationName>
+                        <lt4:crs>COY</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Radyr</lt4:locationName>
+                        <lt4:crs>RDR</lt4:crs>
+                        <lt4:via>via Ninian Park</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:41</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>qYnmhxG6HPtzyK2BGw+deA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Bridgend</lt4:locationName>
+                        <lt4:crs>BGN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Aberdare</lt4:locationName>
+                        <lt4:crs>ABA</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:41</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>iH/J3DS1kDFAtt6bRGn85A==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Merthyr Tydfil</lt4:locationName>
+                        <lt4:crs>MER</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Bridgend</lt4:locationName>
+                        <lt4:crs>BGN</lt4:crs>
+                        <lt4:via>via Rhoose Cardiff Int Airport</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:42</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>BPSTVKiOrVnvLdAJaBtBxQ==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Paddington</lt4:locationName>
+                        <lt4:crs>PAD</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Swansea</lt4:locationName>
+                        <lt4:crs>SWA</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:45</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>CrossCountry</lt4:operator>
+                  <lt4:operatorCode>XC</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>JgqbgvPQxIHnv4dpsaVjYQ==</lt4:serviceID>
+                  <lt5:rsid>XC527000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Nottingham</lt4:locationName>
+                        <lt4:crs>NOT</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:46</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>YYoAJc3mx+J5m7SzkmGsXg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Rhymney</lt4:locationName>
+                        <lt4:crs>RHY</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:47</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>o2teuQtI409L5DSVuhLoMw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                        <lt4:crs>MAN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Milford Haven</lt4:locationName>
+                        <lt4:crs>MFH</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:49</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>kDYUD9dB+NdZEv4+9XCDzA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Milford Haven</lt4:locationName>
+                        <lt4:crs>MFH</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                        <lt4:crs>MAN</lt4:crs>
+                        <lt4:via>via Shrewsbury</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:51</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>LGWUCTFMYIHETrbP9EU6HA==</lt4:serviceID>
+                  <lt5:rsid>AW868700</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Radyr</lt4:locationName>
+                        <lt4:crs>RDR</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Coryton</lt4:locationName>
+                        <lt4:crs>COY</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:54</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>oQ+kgu9Kd2XAXByo34kXYg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>London Paddington</lt4:locationName>
+                        <lt4:crs>PAD</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:55</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>7lpWiQyyR2H3rtq8XqS5eg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Aberdare</lt4:locationName>
+                        <lt4:crs>ABA</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:56</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>mzCCOz9kZ5qxBHRlhjCJyQ==</lt4:serviceID>
+                  <lt5:rsid>AW965200</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Merthyr Tydfil</lt4:locationName>
+                        <lt4:crs>MER</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:00</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>SrC9VmJyuzw23ZYRkahFkw==</lt4:serviceID>
+                  <lt5:rsid>GW862100</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Penzance</lt4:locationName>
+                        <lt4:crs>PNZ</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:01</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>uTjyDagA/4DrWYFGJTAP4Q==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Bargoed</lt4:locationName>
+                        <lt4:crs>BGD</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:02</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>GLzofrOSMj9+N/TxBFg+YA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Bargoed</lt4:locationName>
+                        <lt4:crs>BGD</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Penarth</lt4:locationName>
+                        <lt4:crs>PEN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:05</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>ISayAL5jq15UOt1MB994Dg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Treherbert</lt4:locationName>
+                        <lt4:crs>TRB</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:06</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>ooaXcYrli3ZCL2fGBOWnKg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Coryton</lt4:locationName>
+                        <lt4:crs>COY</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Radyr</lt4:locationName>
+                        <lt4:crs>RDR</lt4:crs>
+                        <lt4:via>via Ninian Park</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:07</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>ArlKzl/ho/uBvX7MV3D9mA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Maesteg</lt4:locationName>
+                        <lt4:crs>MST</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Cheltenham Spa</lt4:locationName>
+                        <lt4:crs>CNM</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:08</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>9d3t1n7CYo2ei3WB8Zjftg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Swansea</lt4:locationName>
+                        <lt4:crs>SWA</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:10</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>6SYRQLZnILndoiMX7iFx+w==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Merthyr Tydfil</lt4:locationName>
+                        <lt4:crs>MER</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:11</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>pEzYqmNcgfkydFmgpEjunA==</lt4:serviceID>
+                  <lt5:rsid>AW909600</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Aberdare</lt4:locationName>
+                        <lt4:crs>ABA</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:16</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>D6oImW6Oua5kXxCwAvSVTQ==</lt4:serviceID>
+                  <lt5:rsid>AW205300</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cheltenham Spa</lt4:locationName>
+                        <lt4:crs>CNM</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Maesteg</lt4:locationName>
+                        <lt4:crs>MST</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:16</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>PQnNGcUvAIqm38gXSNtfdw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Cardiff Central</lt4:locationName>
+                        <lt4:crs>${mockCrs}</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Ystrad Mynach</lt4:locationName>
+                        <lt4:crs>YSM</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:18</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>+fphemH61NiyoJlFm1K3vA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Swansea</lt4:locationName>
+                        <lt4:crs>SWA</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>London Paddington</lt4:locationName>
+                        <lt4:crs>PAD</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:21</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>NFuIa11QowM9CijLK+a2IA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Radyr</lt4:locationName>
+                        <lt4:crs>RDR</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Coryton</lt4:locationName>
+                        <lt4:crs>COY</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:23</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>27Oa/Ad1NAATKSmNDEIzUg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Llanelli</lt4:locationName>
+                        <lt4:crs>LLE</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Chester</lt4:locationName>
+                        <lt4:crs>CTR</lt4:crs>
+                        <lt4:via>via Shrewsbury</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:24</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Great Western Railway</lt4:operator>
+                  <lt4:operatorCode>GW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>YkR0vH67qLWGnWHqkLK9vg==</lt4:serviceID>
+                  <lt5:rsid>GW634100</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Paddington</lt4:locationName>
+                        <lt4:crs>PAD</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Swansea</lt4:locationName>
+                        <lt4:crs>SWA</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:25</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>p82Ni4YJMD04G2ZoWM/3yA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Aberdare</lt4:locationName>
+                        <lt4:crs>ABA</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:26</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Transport for Wales</lt4:operator>
+                  <lt4:operatorCode>AW</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>ThYsnh33rSndP0rgJ1vJog==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>Barry Island</lt4:locationName>
+                        <lt4:crs>BYI</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Merthyr Tydfil</lt4:locationName>
+                        <lt4:crs>MER</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+            </lt7:trainServices>
+         </GetStationBoardResult>
+      </GetDepartureBoardResponse>
+   </soap:Body>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://thalesgroup.com/RTTI/2017-10-01/ldb/LDBServiceSoap/GetDepartureBoardResponse"/></con:response><con:dispatchConfig/></con:mockOperation></con:mockService>

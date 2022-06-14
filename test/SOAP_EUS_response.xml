@@ -1,0 +1,1182 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <soap:Body>
+      <GetDepartureBoardResponse xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/">
+         <GetStationBoardResult xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types" xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types" xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types" xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types">
+            <lt4:generatedAt>2022-05-17T16:25:24.4887819+01:00</lt4:generatedAt>
+            <lt4:locationName>London Euston</lt4:locationName>
+            <lt4:crs>EUS</lt4:crs>
+            <lt4:platformAvailable>true</lt4:platformAvailable>
+            <lt7:trainServices>
+               <lt7:service>
+                  <lt4:std>16:24</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>dX6zmw4l1VK1epa0l0EupA==</lt4:serviceID>
+                  <lt5:rsid>LM508700</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Northampton</lt4:locationName>
+                        <lt4:crs>NMP</lt4:crs>
+                        <lt4:via>via Milton Keynes Central</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+                  <lt7:formation>
+                     <lt7:coaches>
+                        <lt7:coach number="A1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="A2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="A3">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A4">
+                           <lt7:coachClass>First</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B3">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B4">
+                           <lt7:coachClass>First</lt7:coachClass>
+                        </lt7:coach>
+                     </lt7:coaches>
+                  </lt7:formation>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:27</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>9</lt4:platform>
+                  <lt4:operator>London Overground</lt4:operator>
+                  <lt4:operatorCode>LO</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>DsltR0jyrRG6axaMwgH3zA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Watford Junction</lt4:locationName>
+                        <lt4:crs>WFJ</lt4:crs>
+                        <lt4:via>via Willesden Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:30</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>1</lt4:platform>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>alu+X+coYGT9NodlJsw/NQ==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Glasgow Central</lt4:locationName>
+                        <lt4:crs>GLC</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:33</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:platform>11</lt4:platform>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>gMcIV4NHUR7TO+DtQRUbuQ==</lt4:serviceID>
+                  <lt5:rsid>LM277500</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Tring</lt4:locationName>
+                        <lt4:crs>TRI</lt4:crs>
+                        <lt4:via>via Watford Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+                  <lt7:formation>
+                     <lt7:coaches>
+                        <lt7:coach number="A1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="A2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                     </lt7:coaches>
+                  </lt7:formation>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:40</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>uDLJo1RkQugpZA4g7Kv25w==</lt4:serviceID>
+                  <lt5:rsid>VT716500</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                        <lt4:crs>MAN</lt4:crs>
+                        <lt4:via>via Wilmslow</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:43</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:delayReason>This train has been delayed by the train making extra stops because a train was cancelled</lt4:delayReason>
+                  <lt4:serviceID>uAgTzYDdu5wNf/ILMg4JhQ==</lt4:serviceID>
+                  <lt5:rsid>VT320000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Edinburgh</lt4:locationName>
+                        <lt4:crs>EDB</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:44</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>London Overground</lt4:operator>
+                  <lt4:operatorCode>LO</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>0+ksuxgm4257vwaJ53VFQA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Watford Junction</lt4:locationName>
+                        <lt4:crs>WFJ</lt4:crs>
+                        <lt4:via>via Willesden Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:46</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>2Yd7xreJ3VBwphX4aAxnVQ==</lt4:serviceID>
+                  <lt5:rsid>LM104900</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Crewe</lt4:locationName>
+                        <lt4:crs>CRE</lt4:crs>
+                        <lt4:via>via Nuneaton &amp; Stafford</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+                  <lt7:formation>
+                     <lt7:coaches>
+                        <lt7:coach number="A1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="A2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B2">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B3">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                     </lt7:coaches>
+                  </lt7:formation>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:49</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>M030yrfip3naWwlJHXQHsA==</lt4:serviceID>
+                  <lt5:rsid>LM235800</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Milton Keynes Central</lt4:locationName>
+                        <lt4:crs>MKC</lt4:crs>
+                        <lt4:via>via Watford Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+                  <lt7:formation>
+                     <lt7:coaches>
+                        <lt7:coach number="A1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="A2">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A3">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                     </lt7:coaches>
+                  </lt7:formation>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:52</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>9itlF/3lbi1iaQ6QbDzmUw==</lt4:serviceID>
+                  <lt5:rsid>LM204500</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Birmingham New Street</lt4:locationName>
+                        <lt4:crs>BHM</lt4:crs>
+                        <lt4:via>via Northampton</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+                  <lt7:formation>
+                     <lt7:coaches>
+                        <lt7:coach number="A1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="A2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                     </lt7:coaches>
+                  </lt7:formation>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:57</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>GtuLuqLQ1oo965epSTEIjg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Glasgow Central</lt4:locationName>
+                        <lt4:crs>GLC</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>16:57</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>London Overground</lt4:operator>
+                  <lt4:operatorCode>LO</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>PYZOIIjyGeIkcgSS+/KnoQ==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Watford Junction</lt4:locationName>
+                        <lt4:crs>WFJ</lt4:crs>
+                        <lt4:via>via Willesden Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:00</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>1zIvDgh2rCpnkdRjGTqOpw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                        <lt4:crs>MAN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:03</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>hzoA2/crRIHIhvcALCg6wg==</lt4:serviceID>
+                  <lt5:rsid>VT822000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Liverpool Lime Street</lt4:locationName>
+                        <lt4:crs>LIV</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:03</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>Yjr/GkbiyVuiwUszsMPDQA==</lt4:serviceID>
+                  <lt5:rsid>LM277700</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Tring</lt4:locationName>
+                        <lt4:crs>TRI</lt4:crs>
+                        <lt4:via>via Watford Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+                  <lt7:formation>
+                     <lt7:coaches>
+                        <lt7:coach number="A1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="A2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                     </lt7:coaches>
+                  </lt7:formation>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:10</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>knjfRm/O/teU3LTOmAvPcg==</lt4:serviceID>
+                  <lt5:rsid>VT717500</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                        <lt4:crs>MAN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:14</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>London Overground</lt4:operator>
+                  <lt4:operatorCode>LO</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>R7xO8PYv/heT1ttJX5jDyQ==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Watford Junction</lt4:locationName>
+                        <lt4:crs>WFJ</lt4:crs>
+                        <lt4:via>via Willesden Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+                  <lt7:formation>
+                     <lt7:avgLoading>28</lt7:avgLoading>
+                  </lt7:formation>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:15</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>12</lt4:length>
+                  <lt4:serviceID>K3pqh4fcexXQfkIbRwtarA==</lt4:serviceID>
+                  <lt5:rsid>LM508900</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Northampton</lt4:locationName>
+                        <lt4:crs>NMP</lt4:crs>
+                        <lt4:via>via Milton Keynes Central</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+                  <lt7:formation>
+                     <lt7:coaches>
+                        <lt7:coach number="A1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="A2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="C1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="C2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="C3">
+                           <lt7:coachClass>First</lt7:coachClass>
+                           <lt7:toilet>Standard</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="C4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                     </lt7:coaches>
+                  </lt7:formation>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:23</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>bER9Dve7CN0UY0prZ1D74Q==</lt4:serviceID>
+                  <lt5:rsid>VT534000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Birmingham New Street</lt4:locationName>
+                        <lt4:crs>BHM</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:23</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>H+OJ1U+JOkP03z/adgbmqQ==</lt4:serviceID>
+                  <lt5:rsid>LM236000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Milton Keynes Central</lt4:locationName>
+                        <lt4:crs>MKC</lt4:crs>
+                        <lt4:via>via Watford Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+                  <lt7:formation>
+                     <lt7:coaches>
+                        <lt7:coach number="A1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="A2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="A3">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="A4">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B1">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B2">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                        </lt7:coach>
+                        <lt7:coach number="B3">
+                           <lt7:coachClass>Standard</lt7:coachClass>
+                           <lt7:toilet>Accessible</lt7:toilet>
+                        </lt7:coach>
+                        <lt7:coach number="B4">
+                           <lt7:coachClass>First</lt7:coachClass>
+                        </lt7:coach>
+                     </lt7:coaches>
+                  </lt7:formation>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:27</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>London Overground</lt4:operator>
+                  <lt4:operatorCode>LO</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>hQ1vzdmnlgrBlieBPA5ClA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Watford Junction</lt4:locationName>
+                        <lt4:crs>WFJ</lt4:crs>
+                        <lt4:via>via Willesden Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:30</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>gvWCOjeDv83uUisKfKehvw==</lt4:serviceID>
+                  <lt5:rsid>VT626000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Glasgow Central</lt4:locationName>
+                        <lt4:crs>GLC</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:33</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>fh5VNgYqwpj6wko6GlAPOg==</lt4:serviceID>
+                  <lt5:rsid>VT718000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                        <lt4:crs>MAN</lt4:crs>
+                        <lt4:via>via Wilmslow</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:33</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>+4Czg3cTtTCph0gWOGWkGQ==</lt4:serviceID>
+                  <lt5:rsid>LM277900</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Tring</lt4:locationName>
+                        <lt4:crs>TRI</lt4:crs>
+                        <lt4:via>via Watford Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:43</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>XT6hpV28eAmgYlp0hk+gRQ==</lt4:serviceID>
+                  <lt5:rsid>VT322000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Glasgow Central</lt4:locationName>
+                        <lt4:crs>GLC</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:44</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>London Overground</lt4:operator>
+                  <lt4:operatorCode>LO</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>UO79z6KP5v0HeKutHPTKKw==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Watford Junction</lt4:locationName>
+                        <lt4:crs>WFJ</lt4:crs>
+                        <lt4:via>via Willesden Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:46</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>yQ4g1Soz+qLGbT14plnSDA==</lt4:serviceID>
+                  <lt5:rsid>LM105300</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Crewe</lt4:locationName>
+                        <lt4:crs>CRE</lt4:crs>
+                        <lt4:via>via Nuneaton &amp; Stafford</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:49</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>+3qm80B1ehSmCwEgXVX2Pg==</lt4:serviceID>
+                  <lt5:rsid>LM509300</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Northampton</lt4:locationName>
+                        <lt4:crs>NMP</lt4:crs>
+                        <lt4:via>via Milton Keynes Central</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:52</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>HJbxfQQf9N8Gr110LMpR8Q==</lt4:serviceID>
+                  <lt5:rsid>LM204900</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Birmingham New Street</lt4:locationName>
+                        <lt4:crs>BHM</lt4:crs>
+                        <lt4:via>via Northampton</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:53</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>MK9Jz2D8spV6nefEpI+xRQ==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Milton Keynes Central</lt4:locationName>
+                        <lt4:crs>MKC</lt4:crs>
+                        <lt4:via>via Watford Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:57</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>W2fsGCPP60mjoKBNZpTugg==</lt4:serviceID>
+                  <lt5:rsid>VT628000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Lancaster</lt4:locationName>
+                        <lt4:crs>LAN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>17:57</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>London Overground</lt4:operator>
+                  <lt4:operatorCode>LO</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>Zy8hqWJaH7ga6tH3kuXVSg==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Watford Junction</lt4:locationName>
+                        <lt4:crs>WFJ</lt4:crs>
+                        <lt4:via>via Willesden Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:00</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>JLf9eOMV8qyILDUnJkSV0w==</lt4:serviceID>
+                  <lt5:rsid>VT718500</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Manchester Piccadilly</lt4:locationName>
+                        <lt4:crs>MAN</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:03</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>EyUXZzEt4qM1l5g46vWZ9Q==</lt4:serviceID>
+                  <lt5:rsid>VT826000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Liverpool Lime Street</lt4:locationName>
+                        <lt4:crs>LIV</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:03</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>Llq+eHGRt6V/YqL7GpWScA==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Tring</lt4:locationName>
+                        <lt4:crs>TRI</lt4:crs>
+                        <lt4:via>via Watford Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:10</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>UAN2OIMV0kth0bJj901cqA==</lt4:serviceID>
+                  <lt5:rsid>VT436003</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Wrexham General</lt4:locationName>
+                        <lt4:crs>WRX</lt4:crs>
+                     </lt4:location>
+                     <lt4:location>
+                        <lt4:locationName>Holyhead</lt4:locationName>
+                        <lt4:crs>HHD</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:13</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>fBTljvLmreY+WLfSIG7WbQ==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Northampton</lt4:locationName>
+                        <lt4:crs>NMP</lt4:crs>
+                        <lt4:via>via Milton Keynes Central</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:14</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>London Overground</lt4:operator>
+                  <lt4:operatorCode>LO</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>K7f7eMhfQt4fkhoL6rwO4A==</lt4:serviceID>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Watford Junction</lt4:locationName>
+                        <lt4:crs>WFJ</lt4:crs>
+                        <lt4:via>via Willesden Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:16</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>12</lt4:length>
+                  <lt4:serviceID>01wa682bAHIRW3RIjkXjNw==</lt4:serviceID>
+                  <lt5:rsid>LM509700</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Northampton</lt4:locationName>
+                        <lt4:crs>NMP</lt4:crs>
+                        <lt4:via>via Milton Keynes Central</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:23</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>Avanti West Coast</lt4:operator>
+                  <lt4:operatorCode>VT</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:serviceID>iW4QO/pilSJPOKVsdY1klg==</lt4:serviceID>
+                  <lt5:rsid>VT537001</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Shrewsbury</lt4:locationName>
+                        <lt4:crs>SHR</lt4:crs>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+               <lt7:service>
+                  <lt4:std>18:24</lt4:std>
+                  <lt4:etd>On time</lt4:etd>
+                  <lt4:operator>West Midlands Trains</lt4:operator>
+                  <lt4:operatorCode>LM</lt4:operatorCode>
+                  <lt4:serviceType>train</lt4:serviceType>
+                  <lt4:length>8</lt4:length>
+                  <lt4:serviceID>tUA87AE2kXTgNzHrE3MnQw==</lt4:serviceID>
+                  <lt5:rsid>LM021000</lt5:rsid>
+                  <lt5:origin>
+                     <lt4:location>
+                        <lt4:locationName>London Euston</lt4:locationName>
+                        <lt4:crs>EUS</lt4:crs>
+                     </lt4:location>
+                  </lt5:origin>
+                  <lt5:destination>
+                     <lt4:location>
+                        <lt4:locationName>Milton Keynes Central</lt4:locationName>
+                        <lt4:crs>MKC</lt4:crs>
+                        <lt4:via>via Watford Junction</lt4:via>
+                     </lt4:location>
+                  </lt5:destination>
+               </lt7:service>
+            </lt7:trainServices>
+         </GetStationBoardResult>
+      </GetDepartureBoardResponse>
+   </soap:Body>
+</soap:Envelope>
